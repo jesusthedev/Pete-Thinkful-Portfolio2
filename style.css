@@ -19,7 +19,7 @@ h1, {
   text-align: center;
 }
 
-h2,{
+h2 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
@@ -35,9 +35,6 @@ article {
 article div {
   text-align: center;
   width: 100%;
-}
-h2{
-  text-align: center;
 }
 
 p {
