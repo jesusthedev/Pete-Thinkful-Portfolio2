@@ -15,9 +15,7 @@ body {
 
 /* Set the font family for any h1, h2, or h3 heading */
 h1, 
-h2 {
-  text-align: center;
-}
+h2, 
 h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
