@@ -4,18 +4,23 @@
 body {
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
-  background-color:#eae2b7;
+  padding: 0; 
+  margin: 0 32% 0 32%; 
+  background-color: #eae2b7;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
+
 h1,
 h2,
 h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
-
 
 article {
   padding: 50px 0;
@@ -31,46 +36,51 @@ p {
   text-align: left;
 }
 
-ul{
-  text-align: left;
+a {
+  color: #d62828;
+  transition: color 0.3s; 
 }
-/* The div container constrains the content width within the main container to 600px */
-div {
+
+a:hover {
+  color: #f77f00;
+}
+
+div.container {
   margin: auto;
   width: 600px;
+  text-align: left; 
 }
-
-
 
 img {
   width: 100%;
   max-width: 200px;
   height: auto;
+  display: block;
+  margin: 0 auto; 
 }
 
 hr {
   border: 1px solid black;
 }
 
-/* Add your solution below */
-header{
-  text-align: center;
-}
-
-header > div > nav > a{
-  padding: 10px;
-  font-size: 16px;
-}
-
 .image-circle {
-    border-radius: 50%; 
-     border: 2px solid #003049;
+  border: 2px solid #003049; 
+  border-radius: 50%; 
 }
 
-footer > p{
+nav a {
+  margin-right: 10px;
+}
+
+.imageText {
+  text-align: left; 
+}
+
+header {
   text-align: center;
 }
 
-a:link    { color: #d62828;  }
-a:visited    { color: #d62828;  }
-a:hover   { color: #f77f00; }
+footer {
+  text-align: center;
+  margin-top: 20px; 
+}
