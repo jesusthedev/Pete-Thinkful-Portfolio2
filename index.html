@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><!-- This code sets language to english-->
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -11,76 +11,92 @@
 </head>
 
 <body>
-  <h1>Pete Thinkful | Artist</h1><!--This is the header-->
+  <!-- Header Section -->
+  <header>
+    <h1>Pete Thinkful | Artist</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-
+  <!-- Main Content Section -->
   <main>
-    <div>
-      <section>
-      <nav> <!--This is the navigation bar-->
-        <ol> <!--Make the navigation bar an ol to style it-->
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ol>
-      </nav>
-
-       <h2 id="about">About</h2>
-      <h3>Hi! I'm Pete Thinkful</h3>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About</h2> <!-- Added a heading for the About section -->
       <article>
         <div>
+          <h4>Hi! Im Pete Thinkful</h4>
           <img class="image-circle" src="images/pete-thinkful.png" alt="Pete Thinkful">
-        <h5>I am an artist living in Denver, Colorado</h5><!--Code will take you to the about section of the document-->
-        <h5>As an artist, I'm interested in:</h5>
-            <ul><!--This code will make a bulleted list-->
-              <li>Producing abstract art</li>
-              <li>Creating street graffiti art</li>
-              <li>Connecting with like-minded artists</li>
-            </ul>
-          <p>Please feel free to take a look at my website and feel free to <a href="#contact">contact me</a></p>  <!--This will take you to the contact section of the document--> 
         </div>
-         </article>
+        <p>I'm an artist, living in Denver, Colorado.</p>
+        <p>Im an artist, im Interested in</p>
+        <ul>
+          <li>Producing abstract art</li>
+          <li>Creating street graffiti art</li>
+          <li>Connecting with like-minded artists</li>
+        </ul>
+        <p> Please feel free to look at my website, and feel free to <span><a href="#contact">contact me</a></span>
+        </p>
+      </article>
+    </section>
 
-      <h2>Pete's Background</h2>
+    <hr>
+    <!-- Pete's Background Section -->
+    <section id="background">
+      <h2>Pete's Background</h2> <!-- Added a heading for Pete's Background section -->
+      <article>
+        <p>After graduating college, I became an art teacher and worked with beginners and
+          professionals. My works have been featured in major art galleries across the globe.</p>
+        <p>If you're looking to hire an artist or collaborate on a
+          project, please reach out. I'm excited to work with other artists to create new art.</p>
+      </article>
+    </section>
 
-      <p>After graduating college, I became an art teacher and worked with beginners and professionals. I love art and my works have been featured in major art galleries across the globe</p><!--This is a pargraph-->
-
-      <p>If you're looking to hire an artist or if you're an artist looking for a collaborator for your next project, please reach out! I'm so excited to work with other artists to create new art</p><!--This is a paragraph-->
-      <hr>
-
-      <h2 id="portfolio">Portfolio</h2><!-- This code will take you to the portfolio section of the document-->
-      <h3>Abstract Red</h3>
+    <hr>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Portfolio</h2> <!-- Added a heading for the Portfolio section -->
       <article>
         <div>
-          <img src="images/abstract-red.png" alt="Abstract Red"><!--This will show an image-->
+          <h4>Abstract Red</h4>
+          <img src="images/abstract-red.png" alt="Abstract Red">
+          <p class="imageText">Vaporware wayfarers heirloom neutra disrupt. Activated charcoal waistcoat scenester hell of.</p>
         </div>
-        <p>Vaporware wayfarers heirloom neutra disrupt. Activated charcoal waistcoat scenester hell of.</p><!-- This is a paragraph-->
         <div>
-          <h2>Spiral Zany</h2>
-          <img src="images/spiral-zany.png" alt="Spiral Zany"><!--This code will show an image-->
-          <article>
-            <div>
-          <p>Sriracha portland taxidermy cronut messenger bag, vegan distillery. Vaporware kickstarter air plant mumblecore food truck.</p><!--This is a paragraph-->
-          </div>
+          <h4>Spiral Zany</h4>
+          <img src="images/spiral-zany.png" alt="Spiral Zany">
+          <p class="imageText">Sriracha portland taxidermy cronut messenger bag, vegan distillery. Vaporware kickstarter air plant
+            mumblecore food truck.</p>
+        </div>
         <div>
-          <h2>Melted Rainbow</h2>
-          <img src="images/melted-rainbow.png" alt="Melted Rainbow"><!-- This is an image-->
-          <p>Edison bulb single-origin coffee snackwave, actually ennui locavore shabby chic forage.</p><!--This is a paragraph-->
+          <h4>Melted Rainbow</h4>
+          <img src="images/melted-rainbow.png" alt="Melted Rainbow">
+          <p class="imageText">Edison bulb single-origin coffee snackwave, actually ennui locavore shabby chic forage.</p>
         </div>
       </article>
-      <hr>
+    </section>
 
-      <h2 id="contact">Contact</h2><!-- This code will bring you to the contact section of the document-->
-      <h4>I'd love to hear from you! Please feel free to contact me or follow me:</h4>
-      <ol><!--This code will display as numbered list links-->
-        <li><a href="#linkedin">Linkedin</a></li>
-        <li><a href="#Instagram">Instagram</a></li>
-        <li><a href="#pinterest">Pinterest</a></li>
-      </ol>    
+    <hr>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2> <!-- Added a heading for the Contact section -->
+      <p>I'd love to hear from you! Please feel free to contact or follow me:</p>
+      <ol>
+        <li><a href="your-linkedin-profile">LinkedIn</a></li>
+        <li><a href="your-instagram-profile">Instagram</a></li>
+        <li><a href="your-pinterest-profile">Pinterest</a></li>
+      </ol>
+    </section>
+  </main>
 
-
-  <!-- Footer section -->
+  <!-- Footer Section -->
   <footer>
-          <p>© Pete Thinkful. All rights reserved.</p>
+    <p>© Pete Thinkful. All rights reserved.</p>
   </footer>
+</body>
+
+</html>
 
