@@ -1,5 +1,9 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+header {
+  text-align: center;
+  width: 100%;
+}
 
 body {
   background-color: #eae2b7;
@@ -9,10 +13,6 @@ body {
   text-align:center;
 }
 
-header {
-  text-align: center;
-  width: 100%;
-}
 footer {
   text-align: center;
 }
