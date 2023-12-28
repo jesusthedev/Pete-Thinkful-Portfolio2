@@ -1,41 +1,26 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
-body {/*Styles body of the document*/
+body {
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px; background-color: #eae2b7;
+  padding: 0; 
+  margin: 0 32% 0 32%; 
+  background-color: #eae2b7;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
+
 h1,
 h2,
 h3 {
-  font-family: "Times, serif;
+  font-family: "Playfair Display", Times, serif;
+  text-align: center;
 }
 
-h1{/*Styles all h1 headings*/
-  text-align: center; font-size: 20px;
-}
-
-h2{/*Styles all h2 headings*/
-  text-align: center; 
-  line-height: 80px;
-  font-size: 25px;
-  line-height: -20px;
-  margin-top: -30px;
-  padding-top: -80px;
-
-}
-
-h3{/*Styles all h3 headings*/
-  text-align: center; 
-  margin-top: -20px;
-  font-size: 20px;
-  margin-bottom: -30px;
-}
-h5{/*Styles all h5 headings*/
-  text-align: left;
-}
 article {
   padding: 50px 0;
 }
@@ -46,78 +31,55 @@ article div {
 }
 
 p {
-  text-align: center;
+  line-height: 1.5;
+  text-align: left;
 }
 
-ul{ /*This code applies to all unordered lists*/
-  text-align: left;
-  font-family: Times, serif;
+a {
+  color: #d62828;
+  transition: color 0.3s; 
 }
-/* The div container constrains the content width within the main container to 600px */
-div {
+
+a:hover {
+  color: #f77f00;
+}
+
+div.container {
   margin: auto;
   width: 600px;
+  text-align: left; 
 }
 
 img {
   width: 100%;
   max-width: 200px;
-  height: auto; 
+  height: auto;
+  display: block;
+  margin: 0 auto; 
 }
 
 hr {
   border: 1px solid black;
 }
 
-/* Add your solution below */
-
-.image-circle{
-  border-radius: 50%;/*This makes image round*/
-  border-style: solid;/*this code sets border of rounded image along with the border-width and color (below)*/
-  border-width: 2px;
-  border-color: #003049;
+.image-circle {
+  border: 2px solid #003049; 
+  border-radius: 50%; 
 }
 
-a:link{
-  color: #d62828;/* The color of the link at rest before being visited*/
+nav a {
+  margin-right: 10px;
 }
 
-a:visited{
-  color: red /*The color of the link after it has been visited*/
+.imageText {
+  text-align: left; 
 }
 
-a:hover{
-  color: #f77f00;/*The color of the lonkwhen you hover over it*/
-}
-
-a:active{
-  color: blue;/*The color of the link while being clicked*/
-}
-h4{
-  text-align: left;
-  font-size: 13px;
-  font-family: Arial;
-}
-p{
-  text-align: center;
-}
-/*This code will style the navigation bar*/
-nav ol{                 
-  text-align: center;
-  display: block;
-  margin-bottom: 50px;
-}
-
-nav li{
-  text-align: center;
-  list-style-type: none;
-  display: inline-block;/*This code will line up navigation bar items*/
-  padding-right: 20px;/*This code puts space between nav bar items*/
-}
-h5, p{
+header {
   text-align: center;
 }
 
-footer p{
-  text-align: center;/*This code centers all footer paragraphs*/
+footer {
+  text-align: center;
+  margin-top: 20px; 
 }
