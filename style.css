@@ -7,20 +7,7 @@ body {
   padding: 40px;
 }
 
-header{
-  text-align:center;
-}
-
-nav{
-  text-align: center;
-}
-
-a{
-  margin-right: 20px;
-  
-}
-
-/* Set the font family for any h1, h2, or h3 heading */
+/* Headings */
 h1,
 h2,
 h3 {
@@ -28,66 +15,87 @@ h3 {
   text-align: center;
 }
 
-h2{
-  font-size: 25px;
+/* Header */
+header {
+  text-align: center;
 }
 
-h3{
-  font-size: 20px;
+ul {
+  text-align: left;
+}
+/* Containers */
+div {
+  background-color: #eae2b7;
+  margin: 0 auto;
+  width: 600px;
 }
 
-a:link{
-  color:#d62828;
-}
-
-a:hover{
-  color:#f77f00
-}
-
-article{
+article {
   padding: 50px 0;
-  
-  
 }
 
-section div {
+article div {
   text-align: center;
   width: 100%;
+  padding: 10px;
 }
 
+/* Paragraphs */
 p {
   line-height: 1.5;
+  text-align: left;
+  
+}
+/* Links */
+a:link {
+  color: #d62828;
 }
 
-/* The div container constrains the content width within the main container to 600px */
-div {
-  margin: auto;
-  width: 600px;
- 
+a:hover {
+  color: #f77f00;
 }
 
+nav a {
+  padding-left: 20px;
+}
+
+/* Images */
 img {
   width: 100%;
   max-width: 200px;
   height: auto;
-  img-align:center;
-  
-  
 }
 
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 50%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  justify-content: center;
+}
+
+/* Other page elements */
 hr {
   border: 1px solid black;
 }
 
-/* Add your solution below */
-#image-circle {
-  border-radius:50%;
-  border-color:  #003049;
-  border: 2px solid;
-  
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-footer{
-  text-align:center;
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
