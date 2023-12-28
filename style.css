@@ -22,6 +22,7 @@ header {
 
 ul {
   text-align: left;
+  list-style-position: inside;
 }
 /* Containers */
 div {
