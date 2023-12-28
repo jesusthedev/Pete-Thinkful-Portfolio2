@@ -1,33 +1,18 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 body {
-  background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
+  background-color: #eae2b7;
 }
 
-/* Headings */
+/* Set the font family for any h1, h2, or h3 heading */
 h1,
 h2,
 h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
-}
-
-/* Header */
-header {
-  text-align: center;
-}
-
-ul {
-  text-align: left;
-}
-/* Containers */
-div {
-  background-color: #eae2b7;
-  margin: 0 auto;
-  width: 600px;
 }
 
 article {
@@ -37,65 +22,53 @@ article {
 article div {
   text-align: center;
   width: 100%;
-  padding: 10px;
 }
 
-/* Paragraphs */
 p {
   line-height: 1.5;
-  text-align: left;
-  
-}
-/* Links */
-a:link {
-  color: #d62828;
 }
 
-a:hover {
-  color: #f77f00;
+/* The div container constrains the content width within the main container to 600px */
+div {
+  margin: auto;
+  width: 600px;
 }
 
-nav a {
-  padding-left: 20px;
-}
-
-/* Images */
 img {
   width: 100%;
   max-width: 200px;
   height: auto;
 }
 
-.image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  justify-content: center;
-}
-
-/* Other page elements */
 hr {
   border: 1px solid black;
 }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+/* Add your solution below */
+
+.image-circle {
+  border-radius: 50%;
+  border-color: #003049;
+  border-width: '2px';
+  border-style: solid;
 }
 
-.head {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+header, footer {
+  text-align: center;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+a:link {
+  color: #d62828;
+}
+
+a:visited {
+  
+}
+
+a:hover {
+  color: #f77f00;
+}
+
+a:active {
+  
 }
