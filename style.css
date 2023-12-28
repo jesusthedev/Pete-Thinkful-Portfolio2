@@ -53,10 +53,13 @@ hr {
   border-style: solid;
 }
 
-header, footer {
+header {
   text-align: center;
 }
 
+footer {
+  text-align: center;
+}
 a:link {
   color: #d62828;
 }
